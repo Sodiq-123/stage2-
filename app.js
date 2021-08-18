@@ -24,7 +24,7 @@ module.exports = function (app) {
   app.use(cookieParser());
 
 // Specify the routes
-  app.use('/', routes);
+  app.use(routes);
 
   app.use('/public/', express.static(path.join(__dirname, './public')));
 
