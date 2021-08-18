@@ -6,8 +6,7 @@ var cookieParser = require('cookie-parser');
 var dotenv = require('dotenv').config();
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var contactRouter = require('./routes/users');
+var routes = require('./routes/routes');
 
 var app = express();
 
@@ -25,8 +24,7 @@ module.exports = function (app) {
   app.use(cookieParser());
 
 // Specify the routes
-  app.use('/', indexRouter);
-  app.use('/contact', contactRouter);
+  app.use('/', routes);
 
   app.use('/public/', express.static(path.join(__dirname, './public')));
 
