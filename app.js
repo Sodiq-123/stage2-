@@ -12,7 +12,7 @@ var contactRouter = require('./routes/users');
 var app = express();
 
 module.exports = function (app) {
-  app.engine('.hbs', exphbs.create({
+  app.engine('hbs', exphbs.create({
     defaultlayout: 'main',
     layoutsDir: path.join(__dirname, './views'),
     extname: '.hbs',
