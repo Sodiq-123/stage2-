@@ -16,7 +16,7 @@ mongoose.connect(process.env.DATABASE_URI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
-mongoose.connection.on("open", function () {
+mongoose.connection.on("open", function () {  
   console.log("Mongoose Connected Successfully!");
 });
 

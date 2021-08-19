@@ -8,7 +8,6 @@ var logger = require('morgan');
 
 var routes = require('./routes/routes');
 
-var app = express();
 
 module.exports = function (app) {
   app.engine('hbs', exphbs.create({
@@ -19,8 +18,8 @@ module.exports = function (app) {
   app.set('view engine', 'hbs');
 
   app.use(logger('dev'));
-  app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
+  app.use(express.json());
   app.use(cookieParser());
 
 // Specify the routes
@@ -30,7 +29,9 @@ module.exports = function (app) {
 
   // catch 404 and forward to error handler
   app.use(function(req, res, next) {
-    next(createError(404));
+    if (res.status(404)) {
+      res.render('error.hbs', {title: "Sorry, page not found"});
+    }
   });
 
   // error handler

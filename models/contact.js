@@ -19,3 +19,7 @@ var contactSchema = new Schema({
         default: Date.now
     }
 });
+
+const Contact = mongoose.model("Contact", contactSchema);
+
+module.exports = Contact;
