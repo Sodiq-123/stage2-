@@ -16,20 +16,14 @@ router.post('/contact', function(req, res) {
   if (contact.name && contact.email && contact.message) {
     contact.save(function(err) {
       if (err) {
-        console.log(err);
-        res.render('main', {
-          error: 'Something went wrong. Please try again.'
-        });
-      } else {
-        res.render('main', {
-          success: 'Message Sent Successfully'
-        });
+        re.redirect('/')
       }
+      res.redirect('/');
     });
   }
-  return res.render('main', {
-    error: 'Please fill all the fields.' 
-  });
+  else {
+    return res.redirect('main')
+  }
 });
 
 module.exports = router;
