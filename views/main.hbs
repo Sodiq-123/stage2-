@@ -1,17 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en" dir="ltr">
+  <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Page</title>
-</head>
+    <title>Sodiq Agunbiade</title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-    <form action="/contact" method="POST">
-        <input type="text" name="name" placeholder="Name">
-        <input type="text" name="email" placeholder="Email">
-        <textarea name="message" placeholder="Message"></textarea>
-        <input type="submit" value="Send">
-    </form>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navigation menu -->
+  <nav>
+    <div class="navbar">
+    <div class="logo"><a href="https://internship.zuri.team"><img src="../public/images/zuri-logo.png" height="50" width="50" alt=""></a></div>
+    <div class="logo"><a href="#">Sodiq_dev</a></div>
+    <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="cancel-btn">
+        <i class="fas fa-times"></i>
+        </div>
+    </ul>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/Sodiq_dev"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+<!-- Home Section Start -->
+ <section class="home" id="home">
+    <div class="home-content">
+        <div class="text">
+            <div class="text-one">Hello,</div>
+            <div class="text-two">I'm Sodiq Agunbiade</div>
+            <div class="text-three">a passionate <b>Backend Engineer</b> and ML Enthusiast</div>
+        </div>
+        <div class="button">
+            <a href="#contact"><button>Get In Touch <i class="fas fa-arrow-right"></i></button></a>
+        </div>
+    </div>
+ </section>
+
+<!-- About Section Start -->
+<section class="about" id="about">
+  <div class="content">
+    <div class="title"><span>About Me</span></div>
+  <div class="about-details">
+    <div class="left">
+      <img src="../public/images/about2.jpeg" alt="">
+    </div>
+    <div class="right">
+        <div class="topic">Hello! I’m Sodiq Temitope Agunbiade</div>
+        <p>
+            I am passionate about Backend Developement and Artificial Intelligence with Python and JavaScript. I am a quick learner and a team worker that gets the job done. <br><br>
+            Email: sodiq.agunbiade.4@gmail.com <br><br>
+            Phone: +234 818 636 5834 <br><br>
+            Staus: Available <br><br>
+        </p>
+      <div class="button">
+          <a href="https://drive.google.com/file/d/1n7fCE4OCBdicEPSmexp-k8DX7eE2LzJP/view?usp=sharing"><button>Download CV</button></a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- My Skill Section Start -->
+<!-- Section Tag and Other Div will same where we need to put same CSS -->
+<section class="skills" id="skills">
+ <div class="content">
+   <div class="title"><span>My Skills</span></div>
+   <div class="skills-details">
+     <div class="text">
+       <div class="topic">Skills Reflects Our Knowledge</div>
+       <div>
+           <p>
+               I have a strong background in Backend Web Development and have worked on a wide range of projects.
+           </p>
+       </div>
+       <div class="experience">
+         <div class="num">2+</div>
+         <div class="exp">Years Of <br> Experience</div>
+       </div>
+     </div>
+     <div class="boxes">
+       <div class="box">
+         <div class="topic">HTML</div>
+       </div>
+       <div class="box">
+         <div class="topic">CSS</div>
+       </div>
+       <div class="box">
+         <div class="topic">JavaScript</div>
+       </div>
+       <div class="box">
+         <div class="topic">Python</div>
+       </div>
+       <div class="box">
+         <div class="topic">Machine Learning</div>
+       </div>
+       <div class="box">
+         <div class="topic">ExpressJs</div>
+       </div>
+       <div class="box">
+         <div class="topic">Flask</div>
+       </div>
+       <div class="box">
+         <div class="topic">Database Design</div>
+       </div>
+       <div class="box">
+         <div class="topic">ReactJs</div>
+       </div>
+       <div class="box">
+         <div class="topic">Software Testing</div>
+       </div>
+     </div>
+   </div>
+ </div>
+</section>
+
+<!-- My Services Section Start -->
+ <section class="services" id="services">
+   <div class="content">
+     <div class="title"><span>My Services</span></div>
+     <div class="boxes">
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-desktop"></i>
+       </div>
+       <div class="topic">Web Development</div>
+       <p>
+           I build functional websites for server-side web application logic and write the web services and APIs used by front-end developers
+       </p>
+     </div>
+       <div class="box">
+            <div class="icon">
+                <i class="fas fa-camera-retro"></i>
+            </div>
+       <div class="topic">Software Testing</div>
+       <p>
+           I ensure the quality assurance stage of software development and deployment. <br> I conduct automated and manual tests to ensure the software created by developers is fit for purpose and any bugs or issues are removed within a product before it gets deployed to everyday users.
+       </p>
+     </div>
+   </div>
+   </div>
+ </section>
+
+<!-- Contact Me section Start -->
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span>Contact Me</span></div>
+    <div class="text">
+      <div class="topic">Have Any Project?</div>
+        <div class="container">
+        <form action="/contact"method="POST">
+        <div class="row">
+        <div class="col-25">
+            <label for="name">Name</label>
+        </div>
+            <div class="col-75">
+                <input type="text" name="name" placeholder="Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Email</label>
+            </div>
+        <div class="col-75">
+            <input type="text" name="email" placeholder="Email">
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="message">Message</label>
+            </div>
+            <div class="col-75">
+                <textarea name="message" placeholder="Message" style="height:100px"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+        </form>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section Start -->
+<footer>
+  <div class="text">
+    <span>Created By <a href="#">Sodiq Agunbiade</a> | &#169; 2021 All Rights Reserved</span>
+  </div>
+</footer>
+
+  <script src="../public/javascripts/script.js"></script>
 </body>
 </html>
