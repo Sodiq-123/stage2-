@@ -16,9 +16,11 @@ router.post('/contact', function(req, res) {
   if (contact.name && contact.email && contact.message) {
     contact.save(function(err) {
       if (err) {
-        re.redirect('/')
+        return res.redirect('main', {
+          error: 'Something went wrong. Please try again.'
+        })
       }
-      res.redirect('/');
+      return res.redirect('/');
     });
   }
   else {
