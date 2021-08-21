@@ -244,7 +244,6 @@ section .button button{
   outline: none;
   padding: 8px 16px;
   border-radius: 30px;
-  font-size: 25px;
   font-weight: 400;
   background: #4070f4;
   color: #fff;
