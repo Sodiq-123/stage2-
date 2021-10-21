@@ -404,7 +404,7 @@ footer .text span a:hover{
  /* Contact Form */
 .container {
   box-sizing: border-box;
-  border: 2px solid purple;
+  border: 2px solid #4070f4;
   margin: auto;
   border-radius: 20px;
   background-color: #f2f2f2;
@@ -414,7 +414,7 @@ footer .text span a:hover{
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid purple;
+  border: 1px solid #4070f4;
   border-radius: 15px;
   resize: vertical;
 }
@@ -425,7 +425,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: purple;
+  background-color: #4070f4;
   color: white;
   padding: 12px 20px;
   border: none;
